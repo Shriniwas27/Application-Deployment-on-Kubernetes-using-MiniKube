@@ -99,7 +99,7 @@ kubectl version --client
 
 ### 1️⃣ Create React App
 ```bash
-npx create-react-app my-react-app
+npx create-vite@latest my-react-app
 cd my-react-app
 npm start        # Runs on http://localhost:3000
 npm run build    # Creates production build
