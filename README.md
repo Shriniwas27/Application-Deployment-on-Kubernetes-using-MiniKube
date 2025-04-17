@@ -203,7 +203,9 @@ Then open in your browser:
 ```bash
 http://<minikube-ip>:30036
 ```
-
+alternative :-
+minikube service my-react-app-service
+kubectl port-forward svc/my-react-app-service 8080:80
 ---
 
 ## 🌍 Global Deployment Options
