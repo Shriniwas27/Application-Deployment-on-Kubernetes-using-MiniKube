@@ -119,7 +119,7 @@ CMD ["nginx", "-g", "daemon off;"]
 
 #### Use Minikube’s Docker Daemon:
 ```bash
-eval $(minikube -p minikube docker-env)
+minikube -p minikube docker-env
 ```
 
 #### Build Docker Image:
