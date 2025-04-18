@@ -112,14 +112,19 @@ npm run build    # Creates production build
 Create a `Dockerfile` in your project root:
 ```Dockerfile
 FROM nginx:alpine
-COPY build/ /usr/share/nginx/html
+COPY dist/ /usr/share/nginx/html
 EXPOSE 80
 CMD ["nginx", "-g", "daemon off;"]
 ```
 
 #### Use Minikube’s Docker Daemon:
 ```bash
-minikube -p minikube docker-env
+For Linux/Macos:-
+eval $(minikube -p minikube docker-env)
+```
+```Powershell
+For Windows:-
+& minikube -p minikube docker-env --shell powershell | Invoke-Expression
 ```
 
 #### Build Docker Image:
