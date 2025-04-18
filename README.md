@@ -118,12 +118,14 @@ CMD ["nginx", "-g", "daemon off;"]
 ```
 
 #### Use Minikube’s Docker Daemon:
+###For Linux/Macos:-
 ```bash
-For Linux/Macos:-
+
 eval $(minikube -p minikube docker-env)
 ```
+###For Windows:-
 ```Powershell
-For Windows:-
+
 & minikube -p minikube docker-env --shell powershell | Invoke-Expression
 ```
 
@@ -208,7 +210,8 @@ Then open in your browser:
 ```bash
 http://<minikube-ip>:30036
 ```
-```alternative :-
+###alternative :-
+```
 minikube service my-react-app-service
 kubectl port-forward svc/my-react-app-service 8080:80```
 ---
