@@ -93,7 +93,7 @@ chmod +x kubectl
 sudo mv kubectl /usr/local/bin/
 kubectl version --client
 ```
-*No Need to Install Kubectl Explicitly, If Minikube is already installed.*
+***No Need to Install Kubectl Explicitly, If Minikube is already installed.***
 ---
 
 ## 🧪 Local Deployment
