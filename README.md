@@ -58,7 +58,7 @@ Before proceeding, ensure your system meets the following requirements:
   <img src="i11.png" width="500" >  
 </p>  
 
-**verify Docker Installation:**
+**Verify Docker Installation:**
 ```bash
 docker --version
 ```
